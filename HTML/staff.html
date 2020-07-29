@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/nav+bottom.css">
+    <link rel="stylesheet" href="../css/staff.css">
+    <title>staff</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 微軟正黑體, 標楷體, 新細明體;
+        }
+
+        @media (max-width: 768px) {
+
+            .bar1,
+            .bar2,
+            .bar3 {
+                /* 測試 */
+                /* display: none; */
+
+                width: 30px;
+                height: 4px;
+                background-color: #333;
+                margin: 6px auto;
+                transition: 0.4s;
+            }
+
+            .change .bar1 {
+                /* -webkit-transform: rotate(-45deg) translate(-9px, 6px); */
+                transform: rotate(-45deg) translate(-7px, 6px);
+            }
+
+            .change .bar2 {
+                opacity: 0;
+            }
+
+            .change .bar3 {
+                /* -webkit-transform: rotate(45deg) translate(-8px, -8px); */
+                transform: rotate(45deg) translate(-7px, -8px);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="menu">
+            <div><img src="../素材/nav/A1-PCITURES.png" alt="公司名稱"></div>
+            <a href="./about.html">
+                <div class="about ">關於</div>
+            </a>
+            <a href="./mouth.html">
+                <div class="mouth">口碑</div>
+            </a>
+            <a href="./works.html">
+                <div class="works">作品</div>
+            </a>
+            <a href="./goods.html">
+                <div class="commodity">商品</div>
+            </a>
+            <a href="#">
+                <div class="staff active">員工</div>
+            </a>
+            <a href="./news.html">
+                <div class="news">消息</div>
+            </a>
+            <a href="./recruit.html">
+                <div class="recruit">招募</div>
+            </a>
+            <a href="./contact.html">
+                <div class="contact">聯繫</div>
+            </a>
+        </div>
+    </nav>
+    <div class="nav-768">
+        <picture>
+            <img src="../素材/nav/A1-PCITURES.png" alt="無法載入" width="30px" height="30px">
+        </picture>
+
+        <div class="menu" onclick="myFunction(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+        <div id="aa" class="list">
+            <div class="name"><a href="./about.html">關於</a></div>
+            <div class="name"><a href="./mouth.html">口碑</a></div>
+            <div class="name"><a href="./works.html">作品</a></div>
+            <div class="name"><a href="./goods.html">商品</a></div>
+            <div class="name"><a href="./staff.html">員工</a></div>
+            <div class="name"><a href="./news.html">消息</a></div>
+            <div class="name"><a href="./recruit.html">招募</a></div>
+            <div class="name"><a href=".contact">聯繫</a></div>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="staff-menu">
+            <div class="margin-a cursor-p" onclick="aa(this)">
+                <div class="user"><img src="../素材/staff/user.png" alt="">
+                    <p>佐佐木 啓悟</p>
+                    <p>角色設計&作畫監督</p>
+                    <p class="text-align-r">Keigo Sasaki</p>
+                </div>
+                <div class="staff">
+                    七大罪 聖戰的預兆<br>
+                    七大罪 戒律的復活<br>
+                    七大罪 眾神的逆鳞<br>
+                    青之驅魔師 京都不淨王篇<br>
+                    青之驅魔師 深山鶯邸事件<br>
+                    只有我不存在的城市<br>
+                    世界征服 謀略之星<br>
+                    閃光的夜襲<br><br>
+                    電影版<br>
+                    青之驅魔師 青之拔魔師<br>
+                    七大罪 天空的囚人
+                </div>
+            </div>
+
+            <div class="margin-a cursor-p" onclick="aa(this)">
+                <div class="user"><img src="../素材/staff/user.png" alt="">
+                    <p>村松 千鶴</p>
+                    <p>動畫家</p>
+                    <p class="text-align-r">Chizuru Muramatsu</p>
+                </div>
+                <div class="staff">
+                    青之驅魔師 京都不淨王篇<br>
+                    青之驅魔師 深山鶯邸事件<br>
+                    釣球<br><br>
+                    電影版<br>
+                    七大罪 天空的囚人
+                </div>
+            </div>
+
+            <div class="margin-a cursor-p" onclick="aa(this)">
+                <div class="user"><img src="../素材/staff/user.png" alt="">
+                    <p>村上 彩夏</p>
+                    <p>色彩設計、色指定</p>
+                    <p class="text-align-r">Ayaka Murakami</p>
+                </div>
+                <div class="staff">
+                    輝夜姬想讓人告白女主<br>
+                    情色漫畫老師<br><br>
+                    劇場版<br>
+                    歌之☆王子殿下 真愛KINGDOM
+                </div>
+            </div>
+
+
+            <div class="margin-a cursor-p" onclick="aa(this)">
+                <div class="user"><img src="../素材/staff/user.png" alt="">
+                    <p>中島 宏</p>
+                    <p>總監</p>
+                    <p class="text-align-r">Hiroshi Nakajima</p>
+                </div>
+                <div class="staff">
+                    Fate Apocrypha<br>
+                    歌之王子殿下 真愛Legend Star<br><br>
+                    歌之王子殿下 真愛Revolutions<br><br>
+                    魔法少女奈葉ViVid<br><br>
+                    劇場版<br>
+                    歌之☆王子殿下 真愛KINGDOM
+                </div>
+            </div>
+
+
+            <div class="margin-a cursor-p" onclick="aa(this)">
+                <div class="user"><img src="../素材/staff/user.png" alt="">
+                    <p>工藤 菜央</p>
+                    <p>總監</p>
+                    <p class="text-align-r">Nao Kudo</p>
+                </div>
+                <div class="staff">
+                    歌之王子殿下 真愛Revolutions <br><br>
+                    學戰都市Asterisk Season1 <br>
+                    學戰都市Asterisk Season2
+                </div>
+            </div>
+
+
+            <div class="margin-a cursor-p" onclick="aa(this)">
+                <div class="user"><img src="../素材/staff/user.png" alt="">
+                    <p>富田 結伊</p>
+                    <p>分鏡</p>
+                    <p class="text-align-r">Yui Tomita</p>
+                </div>
+                <div class="staff">
+                    輝夜姬想讓人告白女主<br>
+                    Fate Apocrypha<br><br>
+                    我們仍未知道那天所看見的花名
+                </div>
+            </div>
+
+
+            <div class="margin-a cursor-p" onclick="aa(this)">
+                <div class="user"><img src="../素材/staff/user.png" alt="">
+                    <p>蔡 香穂</p>
+                    <p>動畫師</p>
+                    <p class="text-align-r">Kaho Sai</p>
+                </div>
+                <div class="staff">
+
+                </div>
+            </div>
+
+
+            <div class="margin-a cursor-p" onclick="aa(this)">
+                <div class="user"><img src="../素材/staff/user.png" alt="">
+                    <p>竹田 茜</p>
+                    <p>上色師</p>
+                    <p class="text-align-r">Akane Takeda</p>
+                </div>
+                <div class="staff">
+
+                </div>
+            </div>
+
+
+            <div class="margin-a cursor-p" onclick="aa(this)">
+                <div class="user"><img src="../素材/staff/user.png" alt="">
+                    <p>大塚 實梨</p>
+                    <p>第二原畫</p>
+                    <p class="text-align-r">Minori Otsuka</p>
+                </div>
+                <div class="staff">
+
+                </div>
+            </div>
+
+
+            <div class="margin-a cursor-p" onclick="aa(this)">
+                <div class="user"><img src="../素材/staff/user.png" alt="">
+                    <p>鈴木 彬人</p>
+                    <p>分鏡</p>
+                    <p class="text-align-r">Akihito Suzuki</p>
+                </div>
+                <div class="staff">
+
+                </div>
+            </div>
+
+
+            <div class="margin-a cursor-p" onclick="aa(this)">
+                <div class="user"><img src="../素材/staff/user.png" alt="">
+                    <p>森岡 俊宇</p>
+                    <p>3DCG</p>
+                    <p class="text-align-r">Toshitaka Morioka</p>
+                </div>
+                <div class="staff">
+
+                </div>
+            </div>
+
+
+            <div class="margin-a cursor-p" onclick="aa(this)">
+                <div class="user"><img src="../素材/staff/user.png" alt="">
+                    <p>佐藤 由里</p>
+                    <p>製作管理</p>
+                    <p class="text-align-r">Yuri Sato</p>
+                </div>
+                <div class="staff">
+
+                </div>
+            </div>
+
+
+            <div class="margin-a cursor-p" onclick="aa(this)">
+                <div class="user"><img src="../素材/staff/user.png" alt="">
+                    <p>藤田 祥雄</p>
+                    <p>動畫師</p>
+                    <p class="text-align-r">Sachio Fujita</p>
+                </div>
+                <div class="staff">
+                    從漫畫了解Fate/Grand Order <br><br>
+                    Fate Apocrypha <br>
+                    七大罪 聖戰的預兆
+                </div>
+            </div>
+
+
+            <div class="margin-a cursor-p" onclick="aa(this)">
+                <div class="user"><img src="../素材/staff/user.png" alt="">
+                    <p>金子 敦史</p>
+                    <p>動畫師</p>
+                    <p class="text-align-r">Atsushi Kaneko</p>
+                </div>
+                <div class="staff">
+                    刀劍神域 Alicization War of Underworld (第三季下) <br><br>
+                    劇場版<br>
+                    刀劍神域-序列爭戰
+                </div>
+            </div>
+
+
+            <div class="margin-a cursor-p" onclick="aa(this)">
+                <div class="user"><img src="../素材/staff/user.png" alt="">
+                    <p>渋谷 晃尚</p>
+                    <p>動畫師</p>
+                    <p class="text-align-r">Keigo Sasaki</p>
+                </div>
+                <div class="staff">
+                    七大罪 戒律的復活
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bottom">
+        &copy;2020 LIUO GUO-ZAI <br> 版權聲明本網頁僅供教學及練習使用
+    </div>
+
+    <script>
+        // var btn = document.querySelector(".menu");
+
+        // btn.onclick = function () {
+        //     btn.classList.toggle(".change");
+        //     document.querySelector(".list").classList.toggle('show');
+
+        // }
+
+
+
+        function myFunction(x) {
+            x.classList.toggle('change');
+            var ll = document.getElementById("aa");
+            ll.classList.toggle('show');
+        }
+    </script>
+
+    <script>
+        // var btn = document.getElementsByClassName(".margin-a");//document.querySelector(".margin-a");
+        // // btn.onclick = function () {
+        // //     btn.classList.toggle('change');
+        // //     document.querySelector(".list").classList.toggle('show');
+        // // }
+
+        // btn.onclick = function () {
+
+
+        //     btn.classList.toggle("margin-a-bgclor");
+        //     document.querySelector(".user").classList.toggle("user-n");
+        //     document.querySelector(".staff").classList.toggle("staff-b");
+        // }
+
+        function aa(zz) {
+            zz.classList.toggle("margin-a-bgclor");
+            zz.querySelector(".user").classList.toggle("user-n");
+            zz.querySelector(".staff").classList.toggle("staff-b");
+        }
+    </script>
+</body>
+
+</html>

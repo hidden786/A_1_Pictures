@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/nav+bottom.css">
+    <link rel="stylesheet" href="../css/recruit.css">
+    <title>recruit</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 微軟正黑體, 標楷體, 新細明體;
+        }
+
+        @media (max-width: 768px) {
+
+            .bar1,
+            .bar2,
+            .bar3 {
+                /* 測試 */
+                /* display: none; */
+
+                width: 30px;
+                height: 4px;
+                background-color: #333;
+                margin: 6px auto;
+                transition: 0.4s;
+            }
+
+            .change .bar1 {
+                /* -webkit-transform: rotate(-45deg) translate(-9px, 6px); */
+                transform: rotate(-45deg) translate(-7px, 6px);
+            }
+
+            .change .bar2 {
+                opacity: 0;
+            }
+
+            .change .bar3 {
+                /* -webkit-transform: rotate(45deg) translate(-8px, -8px); */
+                transform: rotate(45deg) translate(-7px, -8px);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="menu">
+            <div><img src="../素材/nav/A1-PCITURES.png" alt="公司名稱"></div>
+            <a href="./about.html">
+                <div class="about">關於</div>
+            </a>
+            <a href="./mouth.html">
+                <div class="mouth">口碑</div>
+            </a>
+            <a href="./works.html">
+                <div class="works">作品</div>
+            </a>
+            <a href="./goods.html">
+                <div class="commodity">商品</div>
+            </a>
+            <a href="./staff.html">
+                <div class="staff">員工</div>
+            </a>
+            <a href="./news.html">
+                <div class="news">消息</div>
+            </a>
+            <a href="#">
+                <div class="recruit active">招募</div>
+            </a>
+            <a href="./contact.html">
+                <div class="contact">聯繫</div>
+            </a>
+        </div>
+    </nav>
+    <div class="nav-768">
+        <picture>
+            <img src="../素材/nav/A1-PCITURES.png" alt="無法載入" width="30px" height="30px">
+        </picture>
+
+        <div class="menu" onclick="myFunction(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+        <div id="aa" class="list">
+            <div class="name border-b"><a href="./about.html">關於</a></div>
+            <div class="name border-b"><a href="./mouth.html">口碑</a></div>
+            <div class="name border-b"><a href="./works.html">作品</a></div>
+            <div class="name border-b"><a href="./goods.html">商品</a></div>
+            <div class="name border-b"><a href="./staff.html">員工</a></div>
+            <div class="name border-b"><a href="./news.html">消息</a></div>
+            <div class="name border-b"><a href="./recruit.html">招募</a></div>
+            <div class="name cursor-d"><a href="./contact.html">聯繫</a></div>
+        </div>
+    </div>
+
+    <div class="content1 padding-t-50">
+        <div class="container">
+            <div class="card">
+                <div class="circle">
+                    <h2>上色師</h2>
+                </div>
+                <div class="content">
+                    <p>根據導演和導演創建的情節提要，有“原始圖片”繪製場景的關鍵點，
+                        而“視頻”則繪製表示原始圖片之間一系列運動的圖片</p>
+                    <a href="">我們目前尚未招聘</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="circle">
+                    <h2>動畫師</h2>
+                </div>
+                <div class="content">
+                    <p>我們檢查並管理每個部門的進度，以確保生產進度不會延遲，並指導工作完成</p>
+                    <a href="">我們目前尚未招聘</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="circle">
+                    <h2>監督</h2>
+                </div>
+                <div class="content">
+                    <p>負責3DCG動畫工作，例如建模，紋理設置，添加運動，各種效果</p>
+                    <a href="">我們目前尚未招聘</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="circle">
+                    <h2>第二原畫</h2>
+                </div>
+                <div class="content">
+                    <p>用正確設置的顏色繪製已掃描並轉換為數據的手繪圖像</p>
+                    <a href="">我們目前尚未招聘</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="circle">
+                    <h2>分鏡師</h2>
+                </div>
+                <div class="content">
+                    <p>最終圖像是通過將各種材料（例如數據和背景材料）組合在一起而創建的，這些材料在後處理中被著色</p>
+                    <a href="">我們目前尚未招聘</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="circle">
+                    <h2>製作管理</h2>
+                </div>
+                <div class="content">
+                    <p>執行與許可證相關的工作，例如合同，版權管理和商業化</p>
+                    <a href="">我們目前尚未招聘</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bottom">
+        &copy;2020 LIUO GUO-ZAI <br> 版權聲明本網頁僅供教學及練習使用
+    </div>
+
+    <script>
+        // var btn = document.querySelector(".menu");
+
+        // btn.onclick = function () {
+        //     btn.classList.toggle(".change");
+        //     document.querySelector(".list").classList.toggle('show');
+
+        // }
+        function myFunction(x) {
+            x.classList.toggle('change');
+            var ll = document.getElementById("aa");
+            ll.classList.toggle('show');
+        }
+    </script>
+</body>
+
+</html>

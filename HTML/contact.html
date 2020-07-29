@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/nav+bottom.css">
+    <link rel="stylesheet" href="../css/contact.css">
+    <title>contact</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 微軟正黑體, 標楷體, 新細明體;
+        }
+
+        @media (max-width: 768px) {
+
+            .bar1,
+            .bar2,
+            .bar3 {
+                /* 測試 */
+                /* display: none; */
+
+                width: 30px;
+                height: 4px;
+                background-color: #333;
+                margin: 6px auto;
+                transition: 0.4s;
+            }
+
+            .change .bar1 {
+                /* -webkit-transform: rotate(-45deg) translate(-9px, 6px); */
+                transform: rotate(-45deg) translate(-7px, 6px);
+            }
+
+            .change .bar2 {
+                opacity: 0;
+            }
+
+            .change .bar3 {
+                /* -webkit-transform: rotate(45deg) translate(-8px, -8px); */
+                transform: rotate(45deg) translate(-7px, -8px);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="menu">
+            <div><img src="../素材/nav/A1-PCITURES.png" alt="公司名稱"></div>
+            <a href="./about.html">
+                <div class="about ">關於</div>
+            </a>
+            <a href="./mouth.html">
+                <div class="mouth">口碑</div>
+            </a>
+            <a href="./works.html">
+                <div class="works">作品</div>
+            </a>
+            <a href="./goods.html">
+                <div class="commodity">商品</div>
+            </a>
+            <a href="./staff.html">
+                <div class="staff">員工</div>
+            </a>
+            <a href="./news.html">
+                <div class="news">消息</div>
+            </a>
+            <a href="./recruit.html">
+                <div class="recruit">招募</div>
+            </a>
+            <a href="#">
+                <div class="contact active">聯繫</div>
+            </a>
+        </div>
+    </nav>
+    <div class="nav-768">
+        <picture>
+            <img src="../素材/nav/A1-PCITURES.png" alt="無法載入" width="30px" height="30px">
+        </picture>
+
+        <div class="menu" onclick="myFunction(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+        <div id="aa" class="list">
+            <div class="name border-b"><a href="./about.html">關於</a></div>
+            <div class="name border-b"><a href="./mouth.html">口碑</a></div>
+            <div class="name border-b"><a href="./works.html">作品</a></div>
+            <div class="name border-b"><a href="./goods.html">商品</a></div>
+            <div class="name border-b"><a href="./staff.html">員工</a></div>
+            <div class="name border-b"><a href="./news.html">消息</a></div>
+            <div class="name border-b"><a href="./recruit.html">招募</a></div>
+            <div class="name cursor-d"><a href="./contact.html">聯繫</a></div>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="contact">
+            <div class="contact-menu">
+                <div class="text-c">常見問題</div>
+                <div class="text-c">常見問題列表</div>
+                <div class="text-c"><a href="https://a1p.jp/contact/">點擊這裡了解詳情</a></div>
+            </div>
+            <div class="contact-menu">
+                <div class="text-c">一般查詢</div>
+                <div>
+                    <div class="margin-a">
+                        對作品的意見和印象<br>．諮詢業務<br>．向官方網站及相關媒體查詢
+                    </div>
+                </div>
+                <div class="text-c"><a href="https://a1p.jp/contact/general/">表格查詢</a></div>
+            </div>
+            <div class="contact-menu">
+                <div class="text-c">關於商品的諮詢</div>
+                <div class="text-c">有關A-1 Pictures產品的諮詢</div>
+                <div class="text-c"><a href="https://a1p.jp/contact/goods/">表格查詢</a></div>
+            </div>
+            <div class="contact-menu">
+                <div class="text-c">招聘諮詢</div>
+                <div>
+                    <div class="margin-a">
+                        ．關於職業中期招聘的諮詢<br>．關於工作室參觀的諮詢
+                    </div>
+                </div>
+                <div class="text-c"><a href="https://a1p.jp/contact/recruit/">從表格查詢</a></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bottom">
+        &copy;2020 LIUO GUO-ZAI <br> 版權聲明本網頁僅供教學及練習使用
+    </div>
+
+    <script>
+        // var btn = document.querySelector(".menu");
+
+        // btn.onclick = function () {
+        //     btn.classList.toggle(".change");
+        //     document.querySelector(".list").classList.toggle('show');
+
+        // }
+        function myFunction(x) {
+            x.classList.toggle('change');
+            var ll = document.getElementById("aa");
+            ll.classList.toggle('show');
+
+        }
+    </script>
+</body>
+
+</html>

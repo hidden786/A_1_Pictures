@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/nav+bottom.css">
+    <link rel="stylesheet" href="../css/works.css">
+
+    <link rel="stylesheet" href="../css/swiper-bundle.min.css">
+    <title>works</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 微軟正黑體, 標楷體, 新細明體;
+        }
+
+        @media (max-width: 768px) {
+
+            .bar1,
+            .bar2,
+            .bar3 {
+                /* 測試 */
+                /* display: none; */
+
+                width: 30px;
+                height: 4px;
+                background-color: #333;
+                margin: 6px auto;
+                transition: 0.4s;
+            }
+
+            .change .bar1 {
+                /* -webkit-transform: rotate(-45deg) translate(-9px, 6px); */
+                transform: rotate(-45deg) translate(-7px, 6px);
+            }
+
+            .change .bar2 {
+                opacity: 0;
+            }
+
+            .change .bar3 {
+                /* -webkit-transform: rotate(45deg) translate(-8px, -8px); */
+                transform: rotate(45deg) translate(-7px, -8px);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="menu">
+            <div><img src="../素材/nav/A1-PCITURES.png" alt="公司名稱"></div>
+            <a href="./about.html">
+                <div class="about">關於</div>
+            </a>
+            <a href="./mouth.html">
+                <div class="mouth">口碑</div>
+            </a>
+            <a href="#">
+                <div class="works active">作品</div>
+            </a>
+            <a href="./goods.html">
+                <div class="commodity">商品</div>
+            </a>
+            <a href="./staff.html">
+                <div class="staff">員工</div>
+            </a>
+            <a href="./news.html">
+                <div class="news">消息</div>
+            </a>
+            <a href="./recruit.html">
+                <div class="recruit">招募</div>
+            </a>
+            <a href="./contact.html">
+                <div class="contact">聯繫</div>
+            </a>
+        </div>
+    </nav>
+    <div class="nav-768">
+        <picture>
+            <img src="../素材/nav/A1-PCITURES.png" alt="無法載入" width="30px" height="30px">
+        </picture>
+
+        <div class="menu" onclick="myFunction(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+        <div id="aa" class="list">
+            <div class="name border-b"><a href="./about.html">關於</a></div>
+            <div class="name border-b"><a href="./mouth.html">口碑</a></div>
+            <div class="name border-b"><a href="./works.html">作品</a></div>
+            <div class="name border-b"><a href="./goods.html">商品</a></div>
+            <div class="name border-b"><a href="./staff.html">員工</a></div>
+            <div class="name border-b"><a href="./news.html">消息</a></div>
+            <div class="name border-b"><a href="./recruit.html">招募</a></div>
+            <div class="name cursor-d"><a href="./contact.html">聯繫</a></div>
+        </div>
+    </div>
+
+    <div class="content">
+        <!-- Swiper -->
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide display-n">
+                    <div class="up p-50-b">
+                        <div class="p-50-r"><img src="../素材/works/fate apocrypha.jpg" alt="fate apocrypha"></div>
+                        <div class="p-50-r"><img src="../素材/works/gate 奇幻自衛隊 第一季.jpg" alt="gate 奇幻自衛隊"></div>
+                        <div class=""><img src="../素材/works/gate 奇幻自衛隊 第二季.jpg" alt="gate 奇幻自衛隊"></div>
+                    </div>
+                    <div class="down">
+                        <div class="p-50-r"><img src="../素材/works/七大罪  第一季.jpg" alt="七大罪"></div>
+                        <div class="p-50-r"><img src="../素材/works/七大罪  第二季.jpg" alt="七大罪"></div>
+                        <div class=""><img src="../素材/works/刀劍神域 第三季 後半.jpg" alt="刀劍神域"></div>
+                    </div>
+                </div>
+                <div class="swiper-slide display-n">
+                    <div class="up p-50-b">
+                        <div class="p-50-r"><img src="../素材/works/刀劍神域第二季GGO.jpg" alt="刀劍神域GGO"></div>
+                        <div class="p-50-r"><img src="../素材/works/只有我不存在的城市.jpg" alt="只有我不存在的城市"></div>
+                        <div class=""><img src="../素材/works/四月是你的谎言.jpg" alt="四月是你的谎言"></div>
+                    </div>
+                    <div class="down">
+                        <div class="p-50-r"><img src="../素材/works/妖精尾巴 第二期.jpg" alt="妖精尾巴"></div>
+                        <div class="p-50-r"><img src="../素材/works/妖精尾巴第一季.jpg" alt="妖精尾巴"></div>
+                        <div class=""><img src="../素材/works/妖精的尾巴：最终章.jpg" alt="妖精的尾巴：最终章"></div>
+                    </div>
+                </div>
+                <div class="swiper-slide display-n">
+                    <div class="up p-50-b">
+                        <div class="p-50-r"><img src="../素材/works/學站都市.jpg" alt="學站都市"></div>
+                        <div class="p-50-r"><img src="../素材/works/心靈代碼.jpg" alt="心靈代碼"></div>
+                        <div class=""><img src="../素材/works/我們仍未知道那天所看見的花名.jpg" alt="我們仍未知道那天所看見的花名"></div>
+                    </div>
+                    <div class="down">
+                        <div class="p-50-r"><img src="../素材/works/戰場女武神.jpg" alt="戰場女武神"></div>
+                        <div class="p-50-r"><img src="../素材/works/王牌投手 振臂高挥 夏季大賽篇 第二季.jpg" alt="牌投手 振臂高挥 夏季大賽篇"></div>
+                        <div class=""><img src="../素材/works/王牌投手振臂高揮 第一季.jpg" alt="王牌投手振臂高揮"></div>
+                    </div>
+                </div>
+                <div class="swiper-slide display-n">
+                    <div class="up p-50-b">
+                        <div class="p-50-r"><img src="../素材/works/輝夜姬想讓人告白.jpg" alt="輝夜姬想讓人告白"></div>
+                        <div class="p-50-r"><img src="../素材/works/魔笛MAGI 第一季.jpg" alt="魔笛MAGI"></div>
+                    </div>
+                    <div class="down">
+                        <div class="p-50-r"><img src="../素材/works/魔笛MAGI 第二季.jpg" alt="魔笛MAGI"></div>
+                        <div class="p-50-r"><img src="../素材/works/刀劍神域 第一季.jpg" alt="刀劍神域"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- Add Arrows -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide swiper-wrapper-768">
+                    <div class="up p-50-b">
+                        <div class="p-50-r"><img src="../素材/works/fate apocrypha.jpg" alt="fate apocrypha"></div>
+                        <div><img src="../素材/works/gate 奇幻自衛隊 第一季.jpg" alt="gate 奇幻自衛隊"></div>
+                    </div>
+                    <div class="down">
+                        <div class="p-50-r"><img src="../素材/works/gate 奇幻自衛隊 第二季.jpg" alt="gate 奇幻自衛隊"></div>
+                        <div><img src="../素材/works/七大罪  第一季.jpg" alt="七大罪"></div>
+                    </div>
+                </div>
+                <div class="swiper-slide swiper-wrapper-768">
+                    <div class="up p-50-b">
+                        <div class="p-50-r"><img src="../素材/works/七大罪  第二季.jpg" alt="七大罪"></div>
+                        <div><img src="../素材/works/刀劍神域 第三季 後半.jpg" alt="刀劍神域"></div>
+                    </div>
+                    <div class="down">
+                        <div class="p-50-r"><img src="../素材/works/刀劍神域第二季GGO.jpg" alt="刀劍神域GGO"></div>
+                        <div><img src="../素材/works/只有我不存在的城市.jpg" alt="只有我不存在的城市"></div>
+                    </div>
+                </div>
+                <div class="swiper-slide swiper-wrapper-768">
+                    <div class="up p-50-b">
+                        <div class="p-50-r"><img src="../素材/works/四月是你的谎言.jpg" alt="四月是你的谎言"></div>
+                        <div><img src="../素材/works/妖精尾巴 第二期.jpg" alt="妖精尾巴"></div>
+                    </div>
+                    <div class="down">
+                        <div class="p-50-r"><img src="../素材/works/妖精尾巴第一季.jpg" alt="妖精尾巴"></div>
+                        <div><img src="../素材/works/妖精的尾巴：最终章.jpg" alt="妖精的尾巴：最终章"></div>
+                    </div>
+                </div>
+                <div class="swiper-slide swiper-wrapper-768">
+                    <div class="up p-50-b">
+                        <div class="p-50-r"><img src="../素材/works/學站都市.jpg" alt="學站都市"></div>
+                        <div><img src="../素材/works/心靈代碼.jpg" alt="心靈代碼"></div>
+                    </div>
+                    <div class="down">
+                        <div class="p-50-r"><img src="../素材/works/我們仍未知道那天所看見的花名.jpg" alt="我們仍未知道那天所看見的花名"></div>
+                        <div><img src="../素材/works/戰場女武神.jpg" alt="戰場女武神"></div>
+                    </div>
+                </div>
+                <div class="swiper-slide swiper-wrapper-768">
+                    <div class="up p-50-b">
+                        <div class="p-50-r"><img src="../素材/works/王牌投手 振臂高挥 夏季大賽篇 第二季.jpg" alt="牌投手 振臂高挥 夏季大賽篇"></div>
+                        <div><img src="../素材/works/王牌投手振臂高揮 第一季.jpg" alt="王牌投手振臂高揮"></div>
+                    </div>
+                    <div class="down">
+                        <div class="p-50-r"><img src="../素材/works/輝夜姬想讓人告白.jpg" alt="輝夜姬想讓人告白"></div>
+                        <div><img src="../素材/works/魔笛MAGI 第一季.jpg" alt="魔笛MAGI"></div>
+                    </div>
+                </div>
+                <div class="swiper-slide swiper-wrapper-768">
+                    <div class="up p-50-b">
+                        <div><img src="../素材/works/魔笛MAGI 第二季.jpg" alt="魔笛MAGI"></div>
+                    </div>
+                    <div class="down">
+                        <div><img src="../素材/works/刀劍神域 第一季.jpg" alt="刀劍神域"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- Add Arrows -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </div>
+
+    <div class="bottom">
+        &copy;2020 LIUO GUO-ZAI <br> 版權聲明本網頁僅供教學及練習使用
+    </div>
+
+    <!-- 漢堡條 -->
+    <script>
+        // var btn = document.querySelector(".menu");
+
+        // btn.onclick = function () {
+        //     btn.classList.toggle(".change");
+        //     document.querySelector(".list").classList.toggle('show');
+
+        // }
+
+
+
+        function myFunction(x) {
+            x.classList.toggle('change');
+            var ll = document.getElementById("aa");
+            ll.classList.toggle('show');
+        }
+    </script>
+
+    <!-- swiper -->
+    <script src="../js/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
+</body>
+
+</html>

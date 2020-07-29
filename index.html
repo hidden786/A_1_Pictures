@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/nav+bottom.css">
+    <link rel="stylesheet" href="./css/about.css">
+    <link rel="stylesheet" href="./css/loading.css">
+    <title>about</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 微軟正黑體, 標楷體, 新細明體;
+        }
+
+        @media (max-width: 768px) {
+
+            .bar1,
+            .bar2,
+            .bar3 {
+                /* 測試 */
+                /* display: none; */
+
+                width: 30px;
+                height: 4px;
+                background-color: #333;
+                margin: 6px auto;
+                transition: 0.4s;
+            }
+
+            .change .bar1 {
+                /* -webkit-transform: rotate(-45deg) translate(-9px, 6px); */
+                transform: rotate(-45deg) translate(-7px, 6px);
+            }
+
+            .change .bar2 {
+                opacity: 0;
+            }
+
+            .change .bar3 {
+                /* -webkit-transform: rotate(45deg) translate(-8px, -8px); */
+                transform: rotate(45deg) translate(-7px, -8px);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- loading -->
+    <div class="loading">
+        <div id="A1-pictures" class="pictures">
+            <img src="./素材/nav/A1-PCITURES.png" alt="">
+        </div>
+    </div>
+
+    <div id="all" class="all" style="display: none;">
+        <nav>
+            <div class="menu">
+                <div><img src="./素材/nav/A1-PCITURES.png" alt="公司名稱"></div>
+                <a href="#">
+                    <div class="about active ">關於</div>
+                </a>
+                <a href="./HTML/mouth.html">
+                    <div class="mouth">口碑</div>
+                </a>
+                <a href="./HTML/works.html">
+                    <div class="works">作品</div>
+                </a>
+                <a href="./HTML/goods.html">
+                    <div class="commodity">商品</div>
+                </a>
+                <a href="./HTML/staff.html">
+                    <div class="staff">員工</div>
+                </a>
+                <a href="./HTML/news.html">
+                    <div class="news">消息</div>
+                </a>
+                <a href="./HTML/recruit.html">
+                    <div class="recruit">招募</div>
+                </a>
+                <a href="./HTML/contact.html">
+                    <div class="contact">聯繫</div>
+                </a>
+            </div>
+        </nav>
+        <div class="nav-768">
+            <picture>
+                <img src="./素材/nav/A1-PCITURES.png" alt="無法載入" width="30px" height="30px">
+            </picture>
+
+            <div class="menu" onclick="myFunction(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+            <div id="aa" class="list">
+                <div class="name border-b"><a href="./HTML/about.html">關於</a></div>
+                <div class="name border-b"><a href="./HTML/mouth.html">口碑</a></div>
+                <div class="name border-b"><a href="./HTML/works.html">作品</a></div>
+                <div class="name border-b"><a href="./HTML/goods.html">商品</a></div>
+                <div class="name border-b"><a href="./HTML/staff.html">員工</a></div>
+                <div class="name border-b"><a href="./HTML/news.html">消息</a></div>
+                <div class="name border-b"><a href="./HTML/recruit.html">招募</a></div>
+                <div class="name cursor-d"><a href="./HTML/contact.html">聯繫</a></div>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="information">
+                <div class="p-10 text-c">公司名稱</div>
+                <div class="p-10">A-1 Pictures Inc.</div>
+                <div class="p-10 text-c">所在位置</div>
+                <div class="p-10">東京都杉並區成田東4丁目38-18 166-0015</div>
+                <div class="p-10 text-c">成立時間</div>
+                <div class="p-10">2005年5月9日</div>
+                <div class="p-10 text-c">資本金額</div>
+                <div class="p-10">1億日元</div>
+                <div class="p-10 text-c">資本構成</div>
+                <div class="p-10">Aniplex 100％</div>
+                <div class="p-10 text-c">代表董事</div>
+                <div class="p-10">濱田慎一郎（代表董事兼總裁）</div>
+                <div class="p-10 text-c">集團公司</div>
+                <div class="p-10">Aniplex Co.，Ltd. <br>
+                    美國無敵<br>
+                    CloverWorks Inc. <br>
+                </div>
+            </div>
+            <div class="about-img">
+                <img src="./素材/about/工作室.jpg" alt="">
+                <img src="./素材/about/螢幕快照-2016-10-01-下午3.10.38.png" alt="">
+                <img src="./素材/about/會議室.jpg" alt="">
+            </div>
+        </div>
+
+        <div class="bottom">
+            &copy;2020 LIUO GUO-ZAI <br> 版權聲明本網頁僅供教學及練習使用
+        </div>
+    </div>
+
+    <!-- loading -->
+    <script src="./js/jquery.min.js"></script>
+
+    <!--  loading -->
+    <script>
+        $(Document).ready(function () {
+            setTimeout(function () {
+                $(".loading").fadeOut(5000);
+            }, 1000);
+        });
+        var timer = setInterval(loading, 10);
+    </script>
+
+
+    <!-- show nav + content + bottom -->
+    <script>
+        setTimeout(function () { $("#all").show(); }, 6100);
+    </script>
+
+
+    <script>
+        // var btn = document.querySelector(".menu");
+
+        // btn.onclick = function () {
+        //     btn.classList.toggle(".change");
+        //     document.querySelector(".list").classList.toggle('show');
+
+        // }
+
+
+
+        function myFunction(x) {
+            x.classList.toggle('change');
+            var ll = document.getElementById("aa");
+            ll.classList.toggle('show');
+        }
+    </script>
+</body>
+
+</html>

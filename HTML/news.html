@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/nav+bottom.css">
+    <link rel="stylesheet" href="../css/news.css">
+    <title>news</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 微軟正黑體, 標楷體, 新細明體;
+        }
+
+        @media (max-width: 768px) {
+
+            .bar1,
+            .bar2,
+            .bar3 {
+                /* 測試 */
+                /* display: none; */
+
+                width: 30px;
+                height: 4px;
+                background-color: #333;
+                margin: 6px auto;
+                transition: 0.4s;
+            }
+
+            .change .bar1 {
+                /* -webkit-transform: rotate(-45deg) translate(-9px, 6px); */
+                transform: rotate(-45deg) translate(-7px, 6px);
+            }
+
+            .change .bar2 {
+                opacity: 0;
+            }
+
+            .change .bar3 {
+                /* -webkit-transform: rotate(45deg) translate(-8px, -8px); */
+                transform: rotate(45deg) translate(-7px, -8px);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="menu">
+            <div><img src="../素材/nav/A1-PCITURES.png" alt="公司名稱"></div>
+            <a href="./about.html">
+                <div class="about">關於</div>
+            </a>
+            <a href="./mouth.html">
+                <div class="mouth">口碑</div>
+            </a>
+            <a href="./works.html">
+                <div class="works">作品</div>
+            </a>
+            <a href="./goods.html">
+                <div class="commodity">商品</div>
+            </a>
+            <a href="./staff.html">
+                <div class="staff">員工</div>
+            </a>
+            <a href="#">
+                <div class="news active">消息</div>
+            </a>
+            <a href="./recruit.html">
+                <div class="recruit">招募</div>
+            </a>
+            <a href="./contact.html">
+                <div class="contact">聯繫</div>
+            </a>
+        </div>
+    </nav>
+    <div class="nav-768">
+        <picture>
+            <img src="../素材/nav/A1-PCITURES.png" alt="無法載入" width="30px" height="30px">
+        </picture>
+
+        <div class="menu" onclick="myFunction(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+        <div id="aa" class="list">
+            <div class="name border-b"><a href="./about.html">關於</a></div>
+            <div class="name border-b"><a href="./mouth.html">口碑</a></div>
+            <div class="name border-b"><a href="./works.html">作品</a></div>
+            <div class="name border-b"><a href="./goods.html">商品</a></div>
+            <div class="name border-b"><a href="./staff.html">員工</a></div>
+            <div class="name border-b"><a href="./news.html">消息</a></div>
+            <div class="name border-b"><a href="./recruit.html">招募</a></div>
+            <div class="name cursor-d"><a href="./contact.html">聯繫</a></div>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="news">
+            <div class="news-menu display-g" id="title1">
+                <div class="padding-10 text-c">
+                    <h4>
+                        <div class="cursor-p">2019.07.19</div>
+                    </h4>
+                </div>
+                <div class="padding-10 text-c-480">
+                    <h4>
+                        <div class="cursor-p">京都動畫有限公司發生縱火事件</div>
+                    </h4>
+                </div>
+            </div>
+            <div class="billboard" id="billboard-content1">
+                <!-- <div class="billboard-content padding-10-t">
+                    <div class="text-c">2019.07.19</div>
+                    <div>京都動畫有限公司發生縱火事件</div>
+                </div> -->
+                <div class="text-c padding-30">向遇難者的家人，朋友和相關人士表示哀悼，並在京都動畫中因縱火而死的人致以慰問。
+                    真誠地祈禱那些正在接受治療的人能夠立即康復。
+                    作為動畫行業的一員，會考慮盡所能提供的支持
+                </div>
+                <div class="padding-10-b">
+                    A-1 Pictures Inc.
+                </div>
+            </div>
+
+
+            <div class="news-menu display-g" id="title2">
+                <div class="padding-10 text-c">
+                    <h4>
+                        <div class="cursor-p">2019.06.03</div>
+                    </h4>
+                </div>
+                <div class="padding-10 text-c-480">
+                    <h4>
+                        <div class="cursor-p">STAFF頁面已更新</div>
+                    </h4>
+                </div>
+            </div>
+            <div class="billboard" id="billboard-content2">
+                <div class="text-c padding-30">STAFF頁面上，以更新和更新了對6位STAFF成員的採訪
+                </div>
+            </div>
+
+
+            <div class="news-menu display-g" id="title3">
+                <div class="padding-10 text-c">
+                    <h4>
+                        <div class="cursor-p">2019.05.28</div>
+                    </h4>
+                </div>
+                <div class="padding-10 text-c-480">
+                    <h4>
+                        <div class="cursor-p">2020年招聘已經結束</div>
+                    </h4>
+                </div>
+            </div>
+            <div class="billboard" id="billboard-content3">
+                <!-- <div class="billboard-content padding-10-t">
+                    <div class="text-c">2019.07.19</div>
+                    <div>京都動畫有限公司發生縱火事件</div>
+                </div> -->
+                <div class="text-c padding-30">2020財年所有應屆畢業生招聘已經結束。<br>
+                    感謝您的許多申請
+
+                </div>
+                <div class="padding-10-b">
+                    篩擇文件後，我們會盡快與您聯繫，請耐心等待
+                </div>
+            </div>
+
+            <div class="news-menu display-g" id="title4">
+                <div class="padding-10 text-c">
+                    <h4>
+                        <div class="cursor-p">2019.05.21</div>
+                    </h4>
+                </div>
+                <div class="padding-10 text-c-480">
+                    <h4>
+                        <div class="cursor-p">繪畫．應徵截止日期5月24日</div>
+                    </h4>
+                </div>
+            </div>
+            <div class="billboard" id="billboard-content4">
+                <!-- <div class="billboard-content padding-10-t">
+                    <div class="text-c">2019.07.19</div>
+                    <div>京都動畫有限公司發生縱火事件</div>
+                </div> -->
+                <div class="text-c padding-30">招聘"繪畫"工作申請受理文件必須在5月24日之前到達我們公司</div>
+                <div class="padding-30-l-r">繪圖環境<br></div>
+                <div class="padding-30-l-r padding-10">
+                    <img src="../素材/news/IMG_1639.jpg" alt="">
+                    <img src="../素材/news/IMG_1642.jpg" alt="">
+                </div>
+            </div>
+
+
+            <div class="news-menu display-g" id="title5">
+                <div class="padding-10 text-c">
+                    <h4>
+                        <div class="cursor-p">2019.05.20</div>
+                    </h4>
+                </div>
+                <div class="padding-10 text-c-480">
+                    <h4>
+                        <div class="cursor-p">動畫製作．總監和分鏡的申請已關閉</div>
+                    </h4>
+                </div>
+            </div>
+            <div class="billboard" id="billboard-content5">
+                <!-- <div class="billboard-content padding-10-t">
+                    <div class="text-c">2019.07.19</div>
+                    <div>京都動畫有限公司發生縱火事件</div>
+                </div> -->
+                <div class="text-c padding-30">
+                    職業招聘．動畫製作． 監督．分鏡<br><br>
+                    申請文件將立即全部打開，並開始文件篩選<br>
+                    文件選擇後，我們會盡快與您聯繫，請耐心等待
+                </div>
+                <div class="padding-10-b">
+                    感謝您的申請
+                </div>
+            </div>
+
+
+            <div class="news-menu display-g" id="title6">
+                <div class="padding-10 text-c">
+                    <h4>
+                        <div class="cursor-p">2019.05.13</div>
+                    </h4>
+                </div>
+                <div class="padding-10 text-c-480">
+                    <h4>
+                        <div class="cursor-p">動畫製作．總監．分鏡，申請截止日期5月17日</div>
+                    </h4>
+                </div>
+            </div>
+            <div class="billboard border-radius-b" id="billboard-content6">
+                <!-- <div class="billboard-content padding-10-t">
+                    <div class="text-c">2019.07.19</div>
+                    <div>京都動畫有限公司發生縱火事件</div>
+                </div> -->
+                <div class="text-c padding-30">
+                    招聘．動畫製作．總監．分鏡，工作申請接受文件必須在5月17日到達我們公司
+                </div>
+                <div class="padding-10-b">
+                    我們期待您的申請
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bottom">
+        &copy;2020 LIUO GUO-ZAI <br> 版權聲明本網頁僅供教學及練習使用
+    </div>
+
+    <script>
+        // var btn = document.querySelector(".menu");
+
+        // btn.onclick = function () {
+        //     btn.classList.toggle(".change");
+        //     document.querySelector(".list").classList.toggle('show');
+
+        // }
+        function myFunction(x) {
+            x.classList.toggle('change');
+            var ll = document.getElementById("aa");
+            ll.classList.toggle('show');
+        }
+    </script>
+
+    <script>
+        var news1 = document.getElementById("title1");
+        var news2 = document.getElementById("title2");
+        var news3 = document.getElementById("title3");
+        var news4 = document.getElementById("title4");
+        var news5 = document.getElementById("title5");
+        var news6 = document.getElementById("title6");
+
+        news1.onclick = function () {
+            var news_content = document.getElementById("billboard-content1");
+            news_content.classList.toggle("display-g");
+        }
+
+        news2.onclick = function () {
+            var news_content = document.getElementById("billboard-content2");
+            news_content.classList.toggle("display-g");
+        }
+
+        news3.onclick = function () {
+            var news_content = document.getElementById("billboard-content3");
+            news_content.classList.toggle("display-g");
+        }
+
+        news4.onclick = function () {
+            var news_content = document.getElementById("billboard-content4");
+            news_content.classList.toggle("display-g");
+        }
+
+        news5.onclick = function () {
+            var news_content = document.getElementById("billboard-content5");
+            news_content.classList.toggle("display-g");
+        }
+
+        news6.onclick = function () {
+            var news_content = document.getElementById("billboard-content6");
+            news_content.classList.toggle("display-g");
+        }
+
+    </script>
+</body>
+
+</html>

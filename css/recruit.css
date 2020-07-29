@@ -1,0 +1,157 @@
+.content1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 100vw;
+  width: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(30%, #f6e58d), to(#ffbe76));
+  background: linear-gradient(180deg, #f6e58d 30%, #ffbe76 100%);
+  background-attachment: fixed;
+  opacity: 0.9;
+}
+
+.content1 .container {
+  position: relative;
+  max-width: 1200px;
+  width: 100%;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.content1 .container:hover .card {
+  -webkit-filter: blur(20px);
+          filter: blur(20px);
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+  opacity: 0.5;
+}
+
+.content1 .container .card {
+  position: relative;
+  width: 300px;
+  height: 420px;
+  background: #fff;
+  margin: 20px;
+  border-radius: 20px;
+  overflow: hidden;
+  -webkit-box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.content1 .container .card:hover {
+  -webkit-filter: blur(0px);
+          filter: blur(0px);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  opacity: 1;
+}
+
+.content1 .container .card:nth-child(1) .circle {
+  background: #ffaf00;
+}
+
+.content1 .container .card:nth-child(1) .content a {
+  background: #ffaf00;
+}
+
+.content1 .container .card:nth-child(2) .circle {
+  background: #da2268;
+}
+
+.content1 .container .card:nth-child(2) .content a {
+  background: #da2268;
+}
+
+.content1 .container .card:nth-child(3) .circle {
+  background: #bb02ff;
+}
+
+.content1 .container .card:nth-child(3) .content a {
+  background: #bb02ff;
+}
+
+.content1 .container .card:nth-child(4) .circle {
+  background: #ff0a00;
+}
+
+.content1 .container .card:nth-child(4) .content a {
+  background: #ff0a00;
+}
+
+.content1 .container .card:nth-child(5) .circle {
+  background: #7158e2;
+}
+
+.content1 .container .card:nth-child(5) .content a {
+  background: #7158e2;
+}
+
+.content1 .container .card:nth-child(6) .circle {
+  background: #33d9b2;
+}
+
+.content1 .container .card:nth-child(6) .content a {
+  background: #33d9b2;
+}
+
+.content1 .container .card .circle {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  -webkit-clip-path: circle(180px at center 0);
+          clip-path: circle(180px at center 0);
+  text-align: center;
+}
+
+.content1 .container .card .circle h2 {
+  color: #fff;
+  font-size: 2.5rem;
+  padding: 30px 0;
+}
+
+.content1 .container .card .content {
+  position: absolute;
+  bottom: 10px;
+  padding: 20px;
+  page-break-after: 20px;
+  text-align: center;
+}
+
+.content1 .container .card .content p {
+  color: #666;
+}
+
+.content1 .container .card .content a {
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  background: #000;
+  color: #fff;
+  border-radius: 40px;
+  text-decoration: none;
+  margin-top: 20px;
+}
+
+.padding-t-50 {
+  padding-top: 50px;
+}
+/*# sourceMappingURL=recruit.css.map */
